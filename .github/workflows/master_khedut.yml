@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - khedut
+name: Build and deploy Node.js app to Azure Web App - Khedut
 
 on:
   push:
@@ -60,15 +60,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_8D13651C00D84AB0AC8A21D88FEF987D }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_A5A229C83C464828ADB41E7BE2D17B4B }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_2557EE9EEFE74BD8A61EC1A68CC9653F }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_76AE02D5D8C64F1AB2830D6ABE1E6BB2 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_23DD487FFD2B4FC2B444DD948CF18E86 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_B811461E7D484AE6AA14FEF6E772719B }}
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'khedut'
+          app-name: 'Khedut'
           slot-name: 'Production'
           package: .
           
